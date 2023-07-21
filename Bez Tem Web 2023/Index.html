@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bezaleel Learning Center</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: cyan;
+  color: white;
+
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 80px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: cyan;
+  padding: 20px;
+color:white;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+
+
+
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}	
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: Red;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: -webkit-sticky;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="header">
+  <h1>Bezaleel Learning Center</h1>
+  <p> <b>Spirit</b> of <b> Excelence</b>.</p>
+  <p style="color:blue;">Contact us on: <a href="+2348060690742"> <b>+2348060690742</b></a> <i>No. 2 Nung Eteh Avenue, Shelter Afrique</i> <a href="https://web.facebook.com/profile.php?id=100066930162654">Facebook</a></p>
+ <p style="color:red;"> Happy Valedictory Service to our outgoing students <b> Master Firmness Amaeze</b> and <b> Miss Praise Banjo</b></p><br>
+<p style="color:blue;"> ICT and CODING team <b> DEDICATE</b> this <i> TEMPORARY WEBSITE</i> to you.</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html" class="active">Home</a>
+  <a href="https://infoviewsims.com/#/login">INFO VIEW</a>
+  <a href="https://web.facebook.com/profile.php?id=100066930162654">Why Choose Bezaleel?</a>
+  <a href="https://web.facebook.com/profile.php?id=100066930162654" class="right">Our Admission Policy</a>
+</div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Online Exam Portals</button>
+  <div class="dropdown-content">
+    <a href="https://classroom.google.com/c/NTkxMTQwMjE2NjAz?cjc=raqh36w">Elementary Year1</a>
+    <a href="https://classroom.google.com/c/NTkxMzI2MjM1ODgy?cjc=fcktfqn">Elementary Year2</a>
+    <a href="https://classroom.google.com/c/NTkxMzI5ODg2NTIw?cjc=qc73sr3">Elementary Year3</a>
+    <a href="https://classroom.google.com/c/NTkxMzI5OTUyMDUx?cjc=w7yjodr">Elementary Year4</a>
+    <a href="https://classroom.google.com/c/NTkxNDI2MDkzOTY1?cjc=csehz6s">Elementary Year5</a>
+    <a href="https://classroom.google.com/c/NTkxNDI5ODkyMzc1?cjc=uzgekc2">Elementary Year6</a>
+</div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Schools</button>
+  <div class="dropdown-content">
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">Pre-Nursery</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">Nursery</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">Elementary Year</a>
+</div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Departments</button>
+  <div class="dropdown-content">
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">ELA</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">ICT</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">MATHEMATICS</a>
+   
+</div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">EXTRA-CURRICULAR</button>
+  <div class="dropdown-content">
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">CHESS</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">ICT & CODING</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">STEM</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">ART & CRAFT</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">MUSIC</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">HOME MAKERS</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">FINE ART</a>
+    
+</div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">UNITS</button>
+  <div class="dropdown-content">
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">I.E.P</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">SPECIAL NEEDS</a>
+</div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Our Policies</button>
+  <div class="dropdown-content">
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">Admission Policy</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">HandWriting Policy</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">Life-Long Learning Policy</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">School Fees Policy</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">Anti-Bully Policy</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">Birthday Policy6</a>
+     <a href="https://web.facebook.com/profile.php?id=100066930162654">Note Taking Policy</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">ICT Policy</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">Assessment Policy</a>
+</div>
+</div>
+
+
+<div class="dropdown">
+  <button class="dropbtn">HAPPY HOUR</button>
+  <div class="dropdown-content">
+    <a href="why.html">ONLINE CHAPEL</a>
+   
+</div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">NEWS FEED</button>
+  <div class="dropdown-content">
+    <a href="https://www.tvcnews.tv/education">EDUCATIONAL</a>
+    <a href="https://www.tvcnews.tv/sports">SPORTS</a>
+    <a href="https://www.tvcnews.tv/politics">GOVERNANCE</a>
+    <a href="https://www.tvcnews.tv/economy">BUSINESS</a>
+</div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">PICBANK</button>
+  <div class="dropdown-content">
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">Casual</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">Events</a>
+    <a href="https://web.facebook.com/profile.php?id=100066930162654">Video</a>
+</div>
+</div>
+
+<div class="row">
+  <div class="side">
+<p> Thank you Master <b> Awaji-Onyi Daniel Solomon</b></p>
+<p>Thank you Master<b> UbongAbasi Morgan Morgan</b></p>
+<p>Thank you Miss <b>Marvelous Amatu</b></p>
+<p>Thank you to the Management, Staff and Students of <b> Bezaleel Learning Center</b></p>
+<p>I remain your <b>ICT and CODING</b> instructor: <b>Mr. Okon Bestrig Awa.</b><br>See you during <b>Summer Splash!</b></p>
+
+   ...
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02otC5Db4XohhvueVSR1fiHgtPpyiCVS6JUcg6zqEpjfbPFVwBqWmif7V9NF7PNzXpl%26id%3D100066930162654&show_text=true&width=500" width=100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+     <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02mWb2KTjbu5XGKdsJJn5PZ596przvthcd8P6NTPUMSDZyfQphoPWJF6xi5Qz3wcFyl%26id%3D100066930162654&show_text=true&width=500" width=100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+     <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid094AuJqDDAi5zzFf7uHCkJxiLQf2XKvowen5D9TPGuR18JmGRkwH9QGS5hZMVaYW2l%26id%3D100066930162654&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02jP54NF8VuuBofFdm3Q2LM9mFwGCZgkZZYtXwyWC9qpGcJKYrRGdhYZaGKfQkCiTMl%26id%3D100066930162654&show_text=true&width=500" width=100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0GbSz4KApMmhFFVCQCqpti3rJ7fv4Exr9oofaAYg1C2rQ9DNkyrRr3AJhqn8DWhNCl%26id%3D100066930162654&show_text=true&width=500" width=100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02otC5Db4XohhvueVSR1fiHgtPpyiCVS6JUcg6zqEpjfbPFVwBqWmif7V9NF7PNzXpl%26id%3D100066930162654&show_text=true&width=500" width=100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </div>
+  <div class="main">
+    ...
+
+
+
+
+
+
+<div class="img">
+  <a target="_self" href="img_fjords.jpg">
+    <iframe src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fweb.facebook.com%2F100066930162654%2Fvideos%2F1316456325968475%2F&show_text=false&width=560&t=0" width=100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+  </a>
+  <div class="desc">Bezaleel Facebook Content On Her Temporary Website</div>
+</div>
+
+<div class="img">
+  <a target="_self" href="img_forest.jpg">
+   <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0hrwQUgKSK51CcuCCPeAYJyJpJju8tMqnmNJMpQiuYk4hjd4h68XqiosGag3Kts7jl%26id%3D100066930162654&show_text=true&width=500" width=100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </a>
+  <div class="desc">Bezaleel Facebook Content On Her Temporary Website</div>
+</div>
+
+<div class="img">
+  <a target="_self" href="img_lights.jpg">
+   <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0t9zRhu6RYmpEuUBEnGTe9foeXbb5WWFJiCg1vYLyuzJjsPTAxt2pDX9shbnTNMnyl%26id%3D100066930162654&show_text=true&width=500" width=100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </a>
+  <div class="desc">Bezaleel Facebook Content On Her Temporary Website</div>
+</div>
+
+<div class="img">
+  <a target="_self" href="img_mountains.jpg">
+    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fweb.facebook.com%2F100066930162654%2Fvideos%2F1058913205090428%2F&show_text=false&width=476&t=0" width=100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+  </a>
+  <div class="desc">Bezaleel Facebook Content On Her Temporary Website</div>
+</div>
+<div class="img">
+<a target="_self" href="img_forest.jpg">
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0628CE8aWdrrSjGRwfPQZoAVfBrzTbbwFGKLAUeLcsgSpQKFzz6xkp6bMeGbCAZRSl%26id%3D100066930162654&show_text=true&width=500" width=100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </a>
+  <div class="desc">Bezaleel Facebook Content On Her Temporary Website</div>
+</div>
+
+<div class="img">
+  <a target="_self" href="img_lights.jpg">
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0VoLdfd8H1jnWhFzEkPuRKDSNyoyM3X8a1MaRiWzh8Ng5S8HDgLAXFs1JGDC6A8gfl%26id%3D100066930162654&show_text=true&width=500" width=100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </a>
+  <div class="desc">Bezaleel Facebook Content On Her Temporary Website</div>
+</div>
+
+<div class="img">
+  <a target="_self" href="img_mountains.jpg">
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid033SPuTq3AyjfBFCvWPZkBxFmT6DMBfF7QZpSWYudhwPASdUEGqH64gcJe6nTVY9Wcl%26id%3D100066930162654&show_text=true&width=500" width=100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </a>
+  <div class="desc">Bezaleel Facebook Content On Her Temporary Website</div>
+</div>
+<div class="img">
+<a target="_self" href="img_forest.jpg">
+    <iframe src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fweb.facebook.com%2F100066930162654%2Fvideos%2F627317395698153%2F&show_text=false&width=560&t=0" width= 100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+  </a>
+  <div class="desc">Bezaleel Facebook Content On Her Temporary Website</div>
+</div>
+
+<div class="img">
+  <a target="_self" href="img_lights.jpg">
+   <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0G2gjDWkRr65gfkZsDuaBVF3SMpSbq9zFa4MV6NWY2PY1YMw4DUbyWZ2zm8UEoSQjl%26id%3D100066930162654&show_text=true&width=500" width= 100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+  </a>
+  <div class="desc">Bezaleel Facebook Content On Her Temporary Website</div>
+</div>
+
+
+<div>
+    ...
+    <div class="fakeimg" style="height:200px;"></div>
+   <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fweb.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0G2gjDWkRr65gfkZsDuaBVF3SMpSbq9zFa4MV6NWY2PY1YMw4DUbyWZ2zm8UEoSQjl%26id%3D100066930162654&show_text=true&width=500" width= 100% style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+ </div>
+</div>
+</div>
+
+<div class="footer">
+
+<table style="width:100%">
+  <tr>
+<td><a href="https://web.facebook.com/profile.php?id=100066930162654">Our Textbooks</a></td>
+    <td><a href="https://web.facebook.com/profile.php?id=100066930162654">Our Teachers</a></td>		
+    <td><a href="https://web.facebook.com/profile.php?id=100066930162654">Our Treasured Kids</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://web.facebook.com/profile.php?id=100066930162654">Our Testimonies</a></td>
+    <td><a href="https://web.facebook.com/profile.php?id=100066930162654">Our Time Tested Methods</a></td>		
+    <td><a href="https://web.facebook.com/profile.php?id=100066930162654">Our Our Timeline</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://web.facebook.com/profile.php?id=100066930162654">Our Tenets</a></td>
+    <td><a href="https://web.facebook.com/profile.php?id=100066930162654">Our Terms of Service</a></td>		
+    <td><a href="https://web.facebook.com/profile.php?id=100066930162654">Our Target</a></td>
+  </tr>
+</table>
+  <h5>Copyright (c) 2023 ICT Department @ Bezaleel </h5>
+</div>
+
+</body>
+</html>
